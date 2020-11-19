@@ -1,6 +1,5 @@
 const VueLoaderPlugin = require('vue-loader/lib/plugin-webpack5');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
 const path = require('path');
 
 /** @type {import('webpack').Configuration */
@@ -64,7 +63,6 @@ const config = {
       title: 'Webpack 打包测试',
       chunks: true,
     }),
-    new webpack.HotModuleReplacementPlugin(),
   ],
 };
 
